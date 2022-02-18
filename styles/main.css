@@ -1,0 +1,38 @@
+.menu-category-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu-category-list li a{
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+.c-menu-panel{
+    display: none; 
+}
+
+.active{
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+
+.c-menu-item{
+
+}
+
+.c-menu-panel-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.c-menu-icon{
+    height: 32px;
+    left: 16px;
+    right: 16px;
+    width: 32px;
+    position: absolute;
+    margin: 0;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <div>
+        <nav class="nav-container">
+            <ul class="menu-category-list">
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-item-container">
+                        Products
+                    </a>
+                    <div class="c-menu-panel">
+                        <ul class="c-menu-panel-content">
+                            <li>
+                                <section class="c-menu-item">
+                                    <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="" class="c-menu-icon">
+                                    <h4 class="c-menu-title">
+                                        Firefox para escritorio
+                                    </h4>
+                                    <p class="c-menu-description">
+                                        Obtén el navegador respaldado por una organización sin ánimo de lucro para Windows, Mac o Linux.
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="c-menu-item">
+                                    <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="" class="c-menu-icon">
+                                    <h4 class="c-menu-title">
+
+                                    </h4>
+                                    <p class="c-menu-description">
+                                        
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="c-menu-item">
+                                    <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="" class="c-menu-icon">
+                                    <h4 class="c-menu-title">
+
+                                    </h4>
+                                    <p class="c-menu-description">
+                                        
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="c-menu-item">
+                                    <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="" class="c-menu-icon">
+                                    <h4 class="c-menu-title">
+
+                                    </h4>
+                                    <p class="c-menu-description">
+                                        
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="c-menu-item">
+                                    <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="" class="c-menu-icon">
+                                    <h4 class="c-menu-title">
+
+                                    </h4>
+                                    <p class="c-menu-description">
+                                        
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="c-menu-item">
+                                    <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="" class="c-menu-icon">
+                                    <h4 class="c-menu-title">
+
+                                    </h4>
+                                    <p class="c-menu-description">
+                                        
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="c-menu-item">
+                                    <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" alt="" class="c-menu-icon">
+                                    <h4 class="c-menu-title">
+
+                                    </h4>
+                                    <p class="c-menu-description">
+                                        
+                                    </p>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="drop-down-item">
+                    <a href="#" class="dropdown-item-container">
+                        Who we are
+                    </a>
+                    <div class="c-menu-panel">
+                        this is a dropdown menu for Who we are
+                    </div>
+                </li>
+                <li class="drop-down-item">
+                    <a href="#" class="dropdown-item-container">
+                        Innovation
+                    </a>
+                    <div class="c-menu-panel">
+                        this is a dropdown menu for Innovation
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+
+        showMenu();
+
+        function showMenu(){
+        var menuLists = document.querySelectorAll('.dropdown-item-container');
+        menuLists.forEach(element => {
+            element.addEventListener('mouseover', (e)=>{
+                let menuContainer = e.target.nextElementSibling;
+                menuContainer.classList.add('active');
+            });
+            element.addEventListener('mouseout', (e)=> {
+                let menuContainer = e.target.nextElementSibling;
+                menuContainer.classList.remove('active');
+            })
+        });
+        }
+
+        function hideMenu(){
+
+        }
+
+    </script>
+</body>
+</html>
